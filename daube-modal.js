@@ -9,7 +9,6 @@ daubeModalTemplate.innerHTML = `
       color: rgba(0,0,0,0.87);
       margin: 0;
       padding: 0;
-      z-index: 1;
     }
 
     :host([hidden]) {
@@ -31,6 +30,7 @@ daubeModalTemplate.innerHTML = `
       right: 0;
       bottom: 0;
       left: 0;
+      z-index: 1;
     }
     #entirescreen {
       width: 100%;
@@ -41,6 +41,7 @@ daubeModalTemplate.innerHTML = `
       top: 0;
       left: 0;
       background-color: rgba(0,0,0,0.2);
+      z-index: 1;
     }
   </style>
   <div id="entirescreen" style="display: none;"></div>
