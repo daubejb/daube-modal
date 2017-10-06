@@ -9,6 +9,7 @@ daubeModalTemplate.innerHTML = `
       color: rgba(0,0,0,0.87);
       margin: 0;
       padding: 0;
+      z-index: 1;
     }
 
     :host([hidden]) {
