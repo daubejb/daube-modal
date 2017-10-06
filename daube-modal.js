@@ -108,6 +108,24 @@ class DaubeModal extends HTMLElement {
     }
   }
 
+  disconnectedCallback() {
+    var entirescreen = this.shadowRoot.querySelector("#entirescreen");
+    entirescreen.removeEventListener('click', e => {
+      console.log('entire screen clicked');
+      this.removeAttribute('display');
+    })
+    var primBtn = this.querySelector(".primary");
+    primBtn.removeEventListener('click', e => {
+      console.log('primary button clicked');
+      this.removeAttribute('display');
+    });
+    var secoBtn = this.querySelector(".secondary");
+    secoBtn.removeEventListener('click', e => {
+      console.log('secondary button clicked');
+      this.removeAttribute('display');
+    });
+  }
+
   toggleDisplay() {
     var daubeModal = this.shadowRoot.querySelector('#daubemodal');
     var entirescreen = this.shadowRoot.querySelector('#entirescreen');
