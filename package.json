@@ -1,6 +1,6 @@
 {
   "name": "daube-modal",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A simple modal pop-up dialog --- material-influenced, vanilla js custom element",
   "repository": {
     "type": "git",
