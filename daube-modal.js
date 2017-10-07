@@ -95,12 +95,6 @@ class DaubeModal extends HTMLElement {
       console.log('primary button clicked');
       this.removeAttribute('display');
     });
-    var secoBtn = this.querySelector(".secondary");
-    secoBtn.addEventListener('click', e => {
-      console.log('secondary button clicked');
-      this.removeAttribute('display');
-    });
-
     if (window.ShadyCSS) {
       ShadyCSS.styleElement(this);
     }
