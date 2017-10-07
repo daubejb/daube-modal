@@ -44,11 +44,15 @@ daubeModalTemplate.innerHTML = `
       background-color: rgba(0,0,0,0.2);
       z-index: 1;
     }
+    #details {
+      display: block;
+      z-index: 1;
+    }
   </style>
   <div id="entirescreen" style="display: none;"></div>
   <div id="daubemodal" style="display: none;">
     <slot name="message"></slot>
-    <slot name="details"></slot>
+    <slot name="details" id="details"></slot>
     <slot name="positive"></slot>
   </div>
 `;
