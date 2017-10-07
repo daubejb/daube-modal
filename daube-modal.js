@@ -25,8 +25,8 @@ daubeModalTemplate.innerHTML = `
       padding: 2rem;
       background-color: white;
       margin: auto;
-      width: 16rem;
-      height: 10rem;
+      width: 75%;
+      height: 60%;
       top: 0;
       right: 0;
       bottom: 0;
