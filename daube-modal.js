@@ -47,10 +47,8 @@ daubeModalTemplate.innerHTML = `
   </style>
   <div id="entirescreen" style="display: none;"></div>
   <div id="daubemodal" style="display: none;">
-    <slot name="question"></slot>
-    <slot name="details"></slot>
     <slot name="message"></slot>
-    <slot name="negative"></slot>
+    <slot name="details"></slot>
     <slot name="positive"></slot>
   </div>
 `;
@@ -117,11 +115,6 @@ class DaubeModal extends HTMLElement {
     var primBtn = this.querySelector(".primary");
     primBtn.removeEventListener('click', e => {
       console.log('primary button clicked');
-      this.removeAttribute('display');
-    });
-    var secoBtn = this.querySelector(".secondary");
-    secoBtn.removeEventListener('click', e => {
-      console.log('secondary button clicked');
       this.removeAttribute('display');
     });
   }
