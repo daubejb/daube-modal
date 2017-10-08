@@ -51,7 +51,7 @@ daubeModalTemplate.innerHTML = `
   </style>
   <div id="entirescreen" style="display: none;"></div>
   <div id="daubemodal" style="display: none;">
-    <slot name="message"></slot>
+    <slot name="message" id="message"></slot>
     <slot name="details" id="details"></slot>
     <slot name="positive"></slot>
   </div>
