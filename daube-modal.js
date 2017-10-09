@@ -89,11 +89,6 @@ class DaubeModal extends HTMLElement {
     this.shadowRoot.appendChild(daubeModalTemplate.content.cloneNode(true));
   }
   connectedCallback() {
-    // var entirescreen = this.shadowRoot.querySelector("#entirescreen");
-    // entirescreen.addEventListener('click', e => {
-    //   console.log('entire screen clicked');
-    //   this.removeAttribute('display');
-    // })
     var primBtn = this.querySelector(".primary");
     primBtn.addEventListener('click', e => {
       console.log('primary button clicked');
@@ -105,11 +100,6 @@ class DaubeModal extends HTMLElement {
   }
 
   disconnectedCallback() {
-    // var entirescreen = this.shadowRoot.querySelector("#entirescreen");
-    // entirescreen.removeEventListener('click', e => {
-    //   console.log('entire screen clicked');
-    //   this.removeAttribute('display');
-    // })
     var primBtn = this.querySelector(".primary");
     primBtn.removeEventListener('click', e => {
       console.log('primary button clicked');
