@@ -27,6 +27,8 @@ daubeModalTemplate.innerHTML = `
       margin: auto;
       width: 75%;
       height: 60%;
+      max-width: 40rem;
+      max-height: 64rem;
       top: 0;
       right: 0;
       bottom: 0;
